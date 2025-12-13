@@ -48,6 +48,20 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        cpi_inc_1k: cpi_inc_1k {
+            compatible = "zmk,behavior-key-press";
+            label = "CPI_INC_1K";
+            #binding-cells = <0>;
+            bindings = <CPI_I1K>;
+        };
+
+        cpi_dec_1k: cpi_dec_1k {
+            compatible = "zmk,behavior-key-press";
+            label = "CPI_DEC_1K";
+            #binding-cells = <0>;
+            bindings = <CPI_D1K>;
+        };
     };
 
     keymap {
@@ -97,8 +111,8 @@
             label = "MOUSE";
             bindings = <
 &none   &kp N1          &kp N2          &kp N3        &kp N4     &kp N5              &kp N6         &kp N7     &kp N8             &kp N9     &kp N0     &none
-&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none               &kp PAGE_UP    &mkp LCLK  CPI_I1K  &mkp RCLK  &mkp MCLK  &none
-&none   &none           &none           &none         &none      &none               &kp PAGE_DOWN  &none      CPI_D1K              &none      &none      &none
+&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none               &kp PAGE_UP    &mkp LCLK  &cpi_inc_1k  &mkp RCLK  &mkp MCLK  &none
+&none   &none           &none           &none         &none      &none               &kp PAGE_DOWN  &none      &cpi_dec_1k              &none      &none      &none
 &trans  &trans          &trans          &trans        &trans                 &trans  &trans                                                             &none
             >;
         };
