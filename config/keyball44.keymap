@@ -53,14 +53,14 @@
             compatible = "zmk,behavior-key-press";
             label = "CPI_INC_1K";
             #binding-cells = <0>;
-            bindings = <CPI_I1K>;
+            bindings = <&kp CPI_I1K>;
         };
 
         cpi_dec_1k: cpi_dec_1k {
             compatible = "zmk,behavior-key-press";
             label = "CPI_DEC_1K";
             #binding-cells = <0>;
-            bindings = <CPI_D1K>;
+            bindings = <&kp CPI_D1K>;
         };
     };
 
