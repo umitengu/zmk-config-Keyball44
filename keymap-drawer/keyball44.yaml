@@ -2,7 +2,7 @@ layout: {zmk_keyboard: keyball44}
 layers:
   QWRT:
   - $$mdi:keyboard-esc$$
-  - Q
+  - LGUI
   - W
   - E
   - R
@@ -37,7 +37,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - LGUI
+  - Q
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: SNIPE}
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
